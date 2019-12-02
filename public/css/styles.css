@@ -1,0 +1,84 @@
+
+.potrait{
+    border: 3px solid grey;
+    width:250px;
+    height:300px;
+
+}
+body{
+    color: #333333;
+    font-family: 'Quicksand', sans-serif;
+    max-width:650px;
+    padding: 0 16px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 180vh;
+
+}
+.main-content{
+    flex-grow: 1;
+}
+footer{
+    background-color: white;
+    color: #888888;
+    padding: 14px;
+    margin:16px;
+    border-top: 2px solid #EEEEEE;
+}
+header{
+    margin-top: 4px;
+    padding: 16px 0;
+    margin-bottom: 48px;
+
+
+}
+.nav-link{
+    list-style-type: none;
+    float:left;
+    margin-right: 16px;
+    position:flex;
+    text-decoration: none;
+    color: #333333;
+   
+}
+
+.nav-link:hover{
+    background-color: grey;
+    color:white;
+}
+
+h1{
+    font-size:46px;
+    margin-bottom:5px;
+    margin-left: 50px;
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 40px;
+}
+
+.sunny{
+    width: 500px;
+    height:300px;
+    background-image: url(/images/sunny.gif);
+    background-position: center;
+    border: 1px hidden black;
+    margin: 0 auto;
+}
+.rainy{
+    margin: 0 auto;
+    width: 300px;
+    height:400px;
+    background-image: url(/images/rainy.gif);
+    background-position: center;
+    border: 1px hidden black;
+}
+.cold{
+    width: 300px;
+    height:300px;
+    margin: 0 auto;
+    background-image: url(/images/cold.gif);
+    background-position: center;
+    border: 1px hidden black;
+}
+
+
