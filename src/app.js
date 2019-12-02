@@ -7,11 +7,11 @@ const viewsPath = path.join(__dirname,'./template/views')
 const partialsPath = path.join(__dirname, './template/partials')
 const geocode = require('./utils/geocode.js')
 const forecast = require('./utils/forecast.js')
+const port = process.env.PORT || 3000
 app.use(express.static(publicDirectoryPath))
 app.set('view engine','hbs')
 app.set('views', viewsPath)
 hbs.registerPartials(partialsPath)
-
 app.get('', (req, res)=>{
     res.render('index',{
         title: "Weather App",
@@ -59,7 +59,7 @@ app.get('*',(req,res)=>{
 //app.com/help
 //app.com/about
 
-app.listen(3000, ()=>{
+app.listen(port, ()=>{
 
     console.log("Server is up on port 3000")
 })
