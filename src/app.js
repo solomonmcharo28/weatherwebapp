@@ -28,6 +28,10 @@ app.get('/Weather', (req, res) =>{
     }
     geocode(req.query.address, (error, data)=>{
         const data1 = data;
+        if(error){
+            console.log("Location not found")
+        }
+        else{
         forecast(data1.latitude, data1.longitude, (error, forecastData = {})=>{
             if(error){
                console.log(error)
@@ -38,7 +42,7 @@ app.get('/Weather', (req, res) =>{
                 location:data1.location,
                 address: data1,
             })
-        })
+        })}
        
     })
     
