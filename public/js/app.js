@@ -17,8 +17,9 @@ weatherForm.addEventListener('submit', (e)=>{
         response.json().then((data) =>{
             if(data.error){
             messageOne.textContent = 'Location Not Found'
-            messageTwo.textContent = ''
             messageThree.textContent = ''
+            messageTwo.textContent = ''
+            
             }
             else{
             
