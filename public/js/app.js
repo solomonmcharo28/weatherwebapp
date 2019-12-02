@@ -25,7 +25,7 @@ weatherForm.addEventListener('submit', (e)=>{
             console.log(data)
             messageThree.textContent = data.location
             messageTwo.textContent = (data.forecast.summary + " " + data.forecast.temperature + ". The probability of rain today is " + data.forecast.rainProb + "%.")
-            if(data.forecast.rainProb > 70){
+            if(data.forecast.rainProb > 50){
             const classy = document.getElementById('weatherDisplay').className
             weatherSymbol.classList.replace(classy, 'rainy')
             }
